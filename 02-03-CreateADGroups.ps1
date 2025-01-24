@@ -45,7 +45,7 @@ function New-CustomADGroup {
 # Define groups to create
 $groups = @(
     @{
-        Name = "FinatTest1"
+        Name = "FinalTest1"
         Path = "CN=Users,DC=InfraIT,DC=sec"
         Scope = "Global"
         Category = "Security"
@@ -72,4 +72,7 @@ foreach ($group in $groups) {
 
 # Example of adding new members
 # Add-CustomADGroupMember -GroupName "HR Team" -Members @("New.Employee")
+
+
+
 

@@ -16,3 +16,10 @@ try {
     Write-Host "Failed to create OU: $ouName" -ForegroundColor Red
     Write-Host "Error: $_" -ForegroundColor Red
 }
+
+
+
+# Second command: Check if OU exists before deleting
+if (Get-ADOrganizationalUnit -Filter "Name -eq 'InfraIT_Groups'" -SearchBase "OU=InfraIT_Computers,DC=infrait,DC=sec") {
+    Remove-ADOrganizationalUnit -Identity "OU=TestOU,DC=infrait,DC=sec" -Recursive -Confirm:$false
+}

@@ -1,26 +1,15 @@
 # Define the OU structure using a hashtable
 $ouStructure = @{
-    "IT" = @(
-        "Hardware",
-        "Software",
-        "Network",
-        "Support"
-    )
-    "HR" = @(
-        "Recruitment",
-        "Training",
-        "Benefits",
-        "Employee Records"
-    )
-    "Finance" = @(
-        "Accounting",
-        "Payroll",
-        "Budgeting",
-        "Reporting"
-    )
+    "Workstation" = @(
+        "Global"
+        "Local"
+)
+
+
 }
 
-$domainPath = "DC=InfraIT,DC=sec"
+
+$domainPath = "OU=InfraIT_Groups,DC=InfraIT,DC=sec"
 
 # Function to create an OU with error handling
 function New-CustomADOU {
@@ -138,3 +127,6 @@ function Remove-OUStructure {
 
 # Example usage to remove the structure:
 # Remove-OUStructure -Structure $ouStructure -DomainPath $domainPath
+
+New-ADOrganizationalUnit -Name "InfraIT_Groups" -Path "DC=infrait,DC=sec"
+
