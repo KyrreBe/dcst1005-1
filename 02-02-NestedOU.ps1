@@ -1,15 +1,26 @@
 # Define the OU structure using a hashtable
 $ouStructure = @{
-    "Workstation" = @(
-        "Global"
-        "Local"
-)
-
-
+    "IT" = @(
+        "Hardware",
+        "Software",
+        "Network",
+        "Support"
+    )
+    "HR" = @(
+        "Recruitment",
+        "Training",
+        "Benefits",
+        "Employee Records"
+    )
+    "Finance" = @(
+        "Accounting",
+        "Payroll",
+        "Budgeting",
+        "Reporting"
+    )
 }
 
-
-$domainPath = "OU=InfraIT_Groups,DC=InfraIT,DC=sec"
+$domainPath = "DC=InfraIT,DC=sec"
 
 # Function to create an OU with error handling
 function New-CustomADOU {
