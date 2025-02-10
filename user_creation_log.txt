@@ -1,0 +1,15 @@
+SKIP: User ole.m.larsen already exists
+SKIP: User ingrid.m.ostby already exists
+SKIP: User astrid.e.haugen already exists
+SKIP: User erik.a.solberg already exists
+SKIP: User kristin.s.nilsen already exists
+SKIP: User lars.f.berntsen already exists
+SKIP: User pal.h.dahl already exists
+SKIP: User silje.k.andersen already exists
+SKIP: User oystein.j.berg already exists
+SKIP: User hakon.t.evensen already exists
+SKIP: User marte.c.odegard already exists
+SKIP: User bjorn.a.hagen already exists
+SKIP: User eva.k.roed already exists
+SKIP: User nils.e.gjerde already exists
+SKIP: User ase.m.viken already exists

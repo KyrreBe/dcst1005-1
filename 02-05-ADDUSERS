@@ -1,0 +1,9 @@
+# Basic user creation
+New-ADUser `
+    -SamAccountName "Kyrre" `
+    -UserPrincipalName "Kyrre@infrait.sec" `
+    -Name "Kyrre BM" `
+    -GivenName "Kyrre" `
+    -Surname "BM" `
+    -AccountPassword (ConvertTo-SecureString "P@ssw0rd123" -AsPlainText -Force) `
+    -Enabled $true
